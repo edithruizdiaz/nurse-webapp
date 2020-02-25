@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../NurseApp/WalrusAPI.iml" filepath="$PROJECT_DIR$/../NurseApp/WalrusAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/health-api.iml" filepath="$PROJECT_DIR$/health-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../spring-boot/spring-jdbc/spring-jdbc.iml" filepath="$PROJECT_DIR$/../spring-boot/spring-jdbc/spring-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../spring-boot/spring-rest-hello-world/spring-rest-hello-world.iml" filepath="$PROJECT_DIR$/../spring-boot/spring-rest-hello-world/spring-rest-hello-world.iml" />
+    </modules>
+  </component>
+</project>

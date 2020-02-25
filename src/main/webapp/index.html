@@ -1,0 +1,88 @@
+<html>
+    <head>
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://unpkg.com/tabulator-tables@4.5.3/dist/css/tabulator.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    
+        <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.5.3/dist/js/tabulator.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        
+        <div class="container-md">
+
+
+              <br>
+
+             
+
+
+              <div class="card bg-light mb-9" >
+                <div class="card-header">Patience</div>
+                <div class="card-body">
+                  Name: <input type="text" value="name" id="patienceName">
+                  Date From: <input type="date" value="dateFrom" id="dateFrom">
+                  Date To: <input type="date" value="dateTo" id="dateTo">
+                  <button type="button" class="btn btn-primary" onclick="filterByName()">Find</button>
+                  <button type="button" class="btn btn-primary" onclick="clearFilter()">Clear</button>
+
+                  <a class="btn btn-primary" data-toggle="collapse" href="#collapseNew" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    New
+                  </a>
+                </div>                
+              </div>
+              <br>
+
+              <div class="collapse" id="collapseNew">
+                <div class="card bg-light mb-9" >
+                  <div class="card-header">Patience</div>
+                  <div class="card-body">
+                      <form>
+                          <input type="hidden" value="" id="idRow">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Name</label>
+                            <input type="email" class="form-control" id="name" aria-describedby="emailHelp">
+                            
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Age</label>
+                            <input type="text" class="form-control" id="age">
+                          </div>
+                          <div class="form-group">
+                              <label for="exampleInputPassword1">Blood Presure</label>
+                              <input type="text" class="form-control" id="bloodPresure">
+                          </div>
+                          <div class="form-group">
+                              <label for="exampleInputPassword1">Heart Rate</label>
+                              <input type="text" class="form-control" id="heartRate">
+                          </div>
+          
+                          <button type="button" class="btn btn-primary" onclick="saveOrUpdateData()">Save</button>
+                        </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card bg-light mb-9" >
+                <div class="card-header">Patience list</div>
+                <div class="card-body">
+                    <table id="patience-list">
+
+                    </table>            
+                </div>
+              </div>
+            
+        </div>
+
+
+    </body>
+
+    <script type="text/javascript" src="patience.js"></script>
+
+</html>

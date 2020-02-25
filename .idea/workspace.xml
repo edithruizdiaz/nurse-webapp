@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f1a6464e-c0b5-4eb3-aac4-5bd798c4da5c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YJFSbRDT3JGnozrsoEURxCQiwn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f1a6464e-c0b5-4eb3-aac4-5bd798c4da5c" name="Default Changelist" comment="" />
+      <created>1582652790630</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582652790630</updated>
+      <workItem from="1582652800271" duration="6509000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="773" y="215" key="#com.intellij.ide.util.MemberChooser" timestamp="1582656439196">
+      <screen x="0" y="23" width="1920" height="994" />
+    </state>
+    <state x="773" y="215" key="#com.intellij.ide.util.MemberChooser/0.23.1920.993/-1920.23.1920.1057@0.23.1920.993" timestamp="1582653807911" />
+    <state x="773" y="215" key="#com.intellij.ide.util.MemberChooser/0.23.1920.994/-1920.23.1920.1057@0.23.1920.994" timestamp="1582656439196" />
+    <state x="698" y="275" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582657918004">
+      <screen x="0" y="23" width="1920" height="994" />
+    </state>
+    <state x="698" y="275" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.994/-1920.23.1920.1057@0.23.1920.994" timestamp="1582657918004" />
+    <state x="589" y="223" key="NewModule_or_Project.wizard" timestamp="1582658186048">
+      <screen x="0" y="23" width="1920" height="994" />
+    </state>
+    <state x="589" y="223" key="NewModule_or_Project.wizard/0.23.1920.993/-1920.23.1920.1057@0.23.1920.993" timestamp="1582652854972" />
+    <state x="589" y="223" key="NewModule_or_Project.wizard/0.23.1920.994/-1920.23.1920.1057@0.23.1920.994" timestamp="1582658186048" />
+    <state x="616" y="354" key="com.intellij.ide.util.TipDialog" timestamp="1582652816234">
+      <screen x="0" y="23" width="1920" height="993" />
+    </state>
+    <state x="616" y="354" key="com.intellij.ide.util.TipDialog/0.23.1920.993/-1920.23.1920.1057@0.23.1920.993" timestamp="1582652816234" />
+    <state x="548" y="116" width="824" height="807" key="find.popup" timestamp="1582653092915">
+      <screen x="0" y="23" width="1920" height="993" />
+    </state>
+    <state x="548" y="116" width="824" height="807" key="find.popup/0.23.1920.993/-1920.23.1920.1057@0.23.1920.993" timestamp="1582653092915" />
+  </component>
+</project>
