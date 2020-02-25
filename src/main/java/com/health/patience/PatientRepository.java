@@ -47,8 +47,11 @@ public class PatientRepository {
 
 
     public int deleteById(Long id) {
+        jdbcTemplate.update(
+                "delete from vitalsigns_history where id_patient = ?",
+                id);
         return jdbcTemplate.update(
-                "delete patient where id = ?",
+                "delete from patient where id = ?",
                 id);
     }
 
