@@ -27,10 +27,15 @@ public class PatientController {
     @PostMapping("/patient")
     //return 201 instead of 200
     @ResponseStatus(HttpStatus.CREATED)
-    Patient newPatient(@RequestBody Patient newPatient) {
+    ResponseMsg newPatient(@RequestBody Patient newPatient) {
         int id=repository.saveNew(newPatient);
-        newPatient.setId(id);
-        return newPatient;
+        ResponseMsg rsp=new ResponseMsg();
+        if(id==1){
+            rsp.setStatus("200");
+            rsp.setCode("101");
+            rsp.setMessage("Patient added successfully");
+        }
+        return rsp;
     }
 
     @DeleteMapping("/patient/{id}")

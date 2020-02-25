@@ -22,6 +22,11 @@ public class Patient{
     private int age;
     private String gender;
 
+    private String hrMin;
+    private String hrMax;
+    private String bpMin;
+    private String bpMax;
+
 
     public long getId() {
         return id;
@@ -63,6 +68,38 @@ public class Patient{
         this.gender = gender;
     }
 
+    public String getHrMin() {
+        return hrMin;
+    }
+
+    public void setHrMin(String hrMin) {
+        this.hrMin = hrMin;
+    }
+
+    public String getHrMax() {
+        return hrMax;
+    }
+
+    public void setHrMax(String hrMax) {
+        this.hrMax = hrMax;
+    }
+
+    public String getBpMin() {
+        return bpMin;
+    }
+
+    public void setBpMin(String bpMin) {
+        this.bpMin = bpMin;
+    }
+
+    public String getBpMax() {
+        return bpMax;
+    }
+
+    public void setBpMax(String bpMax) {
+        this.bpMax = bpMax;
+    }
+
     @Override
     public String toString() {
         return "Patient{" +
@@ -71,6 +108,10 @@ public class Patient{
                 ", lastName='" + lastName + '\'' +
                 ", age=" + age +
                 ", gender='" + gender + '\'' +
+                ", hrMin='" + hrMin + '\'' +
+                ", hrMax='" + hrMax + '\'' +
+                ", bpMin='" + bpMin + '\'' +
+                ", bpMax='" + bpMax + '\'' +
                 '}';
     }
 }

@@ -83,18 +83,35 @@ function saveOrUpdateData(){
 
 
 
-    var name=document.getElementById("name").value;
+    var firstName=document.getElementById("firstName").value;
+    var lastName=document.getElementById("lastName").value;
     var age=document.getElementById("age").value;
-    var blood_presure=document.getElementById("bloodPresure").value;
-    var heart_rate=document.getElementById("heartRate").value;
+    var gender=document.getElementById("gender").value;
+
+    // var blood_presure=document.getElementById("bloodPresure").value;
+    // var heart_rate=document.getElementById("heartRate").value;
 
     //create new
     if(idSelected!=undefined){
-        tablePatiences.updateData([{id:idSelected, name:name, age:age, blood_presure:blood_presure, heart_rate:heart_rate}]);
+        tablePatiences.updateData([{id:idSelected, firstName:firstName, age:age, lastName: lastName, gender: gender}]);
     }else{
         //we must calculate the id, that is the sum from the id's plus one
         var newId=calculateId();
-        tablePatiences.addData([{id:newId, name:name, age:age, blood_presure:blood_presure, heart_rate:heart_rate}])
+        var param={id:newId, firstName:firstName, age:age, lastName: lastName, gender: gender};
+        axios.post('/patient', param)
+          .then(function (response) {
+            console.log(response);
+            tablePatiences.addData([param]);
+            alert("Patient added sucessfully");
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+        
+        
+
+        
+    
     }
 
     

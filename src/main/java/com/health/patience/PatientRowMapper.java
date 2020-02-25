@@ -16,6 +16,10 @@ public class PatientRowMapper implements RowMapper<Patient> {
         patient.setLastName(rs.getString("last_name"));
         patient.setAge(rs.getInt("age"));
         patient.setGender(rs.getString("gender"));
+        patient.setBpMax(rs.getString("bp_max"));
+        patient.setBpMin(rs.getString("bp_min"));
+        patient.setHrMax(rs.getString("hr_max"));
+        patient.setHrMin(rs.getString("hr_min"));
 
         return patient;
 

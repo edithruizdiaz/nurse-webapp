@@ -21,8 +21,8 @@ public class PatientRepository {
 
     public int saveNew(Patient patient) {
         return jdbcTemplate.update(
-                "insert into patient (first_name,last_name,age,gender) values(?,?,?,?)",
-                patient.getFirstName(), patient.getLastName(), patient.getAge(),patient.getGender());
+                "insert into patient (id,first_name,last_name,age,gender,hr_min,hr_max,bp_min,bp_max) values(?,?,?,?,?,?,?,?,?)",
+                patient.getId(),patient.getFirstName(), patient.getLastName(), patient.getAge(),patient.getGender(),patient.getHrMin(),patient.getHrMax(),patient.getBpMin(),patient.getBpMax());
     }
 
     public Patient findById(Long id) {
